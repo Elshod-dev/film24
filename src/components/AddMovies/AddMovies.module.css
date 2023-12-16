@@ -1,0 +1,322 @@
+.addMovies__section {
+    position: relative;
+    overflow-y: auto;
+    height: 90vh;
+    padding: 1rem;
+}
+
+.addMovies__section .addMovies__div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 0 5px 2px #c3c3c3;
+    padding: 1rem 2rem;
+}
+
+.addMovies__div form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.addMovies__div form :where(.form__title, .form__language, .form__images, .form__casts) {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.addMovies__div form :where(.form__title, .form__language, .form__images, ) div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form__casts .form__btn {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    width: 50%;
+}
+
+.form__casts .form__casts__cards {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    width: 50%;
+}
+
+.addMovies__div form label {
+    font-size: 14px;
+    color: #4b5563;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.addMovies__div form :where(.form__title, .form__stars, .form__language, .form__casts, .form__desc, .form__genre, .form__category) :is(input, textarea, select) {
+    border: 1px solid rgb(75, 85, 99, .5);
+    outline: none;
+    padding: 1rem;
+    border-radius: .25rem;
+    font-size: .875rem;
+    margin-top: 8px;
+}
+
+.addMovies__div textarea {
+    min-height: 200px;
+}
+
+.form__stars {
+    gap: .4rem;
+}
+
+.form__stars div {
+    display: flex;
+    gap: .1rem;
+    padding: .2rem .5rem;
+}
+
+.form__stars div input {
+    display: none;
+}
+
+.form__stars label {
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+.form__desc,
+.form__category,
+.form__genre,
+.form__video,
+.form__stars {
+    display: flex;
+    flex-direction: column;
+}
+
+
+:where(.form__video, .form__images .form__images__div) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+:where(.form__video, .form__images .form__images__div) div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed #000;
+    padding: 4rem 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:where(.form__video, .form__images .form__images__div) input {
+    display: none;
+}
+
+:where(.form__video, .form__images .form__images__div) div i {
+    color: red;
+    font-size: 1.4rem;
+}
+
+:where(.form__video, .form__images .form__images__div) div span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+:where(.form__video, .form__images .form__images__div) div p {
+    color: #4b5563;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+
+}
+
+.form__images__span {
+    width: 8rem;
+    height: 8rem;
+    padding: 4px;
+    border-radius: .25rem;
+    background-image: url(https://icon-library.com/images/img-icon/img-icon-20.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000;
+}
+
+.form__images__span2 {
+    width: 15rem;
+    height: 8rem;
+    border: 1px solid #000;
+    padding: 4px;
+    border-radius: .25rem;
+    background-image: url(https://icon-library.com/images/img-icon/img-icon-20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+:where(.form__images__span2, .form__images__span) img {
+    width: 100%;
+    height: 100%;
+    border-radius: .25rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.form__images div input {
+    display: none;
+}
+
+.form__category__selected {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.form__category__selected span {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: #4b5563;
+    color: #fff;
+    border-radius: 4px;
+    padding: .25rem;
+    text-transform: capitalize;
+
+}
+
+.form__category__selected span i {
+    cursor: pointer;
+}
+
+.addMovies__div form select {
+    background: transparent;
+    text-transform: capitalize;
+    padding-right: 1rem;
+
+}
+
+.addMovies__div form select option {
+    background: transparent;
+    text-transform: capitalize;
+}
+
+
+
+.form__casts__cards {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+
+
+.form__casts__card {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 2px #c3c3c3;
+}
+
+.form__casts__card img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form__casts__card span {
+    margin: .5rem 0;
+    color: #0c0c0c;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    white-space: nowrap;
+}
+
+.form__casts__icons {
+    display: flex;
+    flex-direction: row !important;
+    gap: .5rem;
+}
+
+.form__casts__icons i {
+    cursor: pointer;
+    padding: 4px;
+    box-shadow: 0 0 5px 2px #c3c3c3;
+}
+
+.addMovies__div button {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #1E5E81;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form__btn {
+    position: relative;
+}
+
+.form__casts {
+    padding: 0 0;
+    min-height: 300px;
+}
+
+.casts__popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.casts__cards {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 5px 2px #c3c3c3;
+}
+
+.casts__cards .casts__cards__img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.casts__cards .casts__cards__img span {
+    padding: 0 .6rem;
+}
+
+.casts__cards .casts__cards__img span i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.casts__cards .casts__cards__img div {
+    width: 6rem;
+    height: 6rem;
+    padding: .4rem;
+}
+
+.casts__cards .casts__cards__img div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,42 @@
+.movies__section {
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    padding: 1rem;
+}
+
+.movies__cards {
+    display: grid;
+    width: 100%;
+    align-items: self-start;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 36px;
+}
+
+.moviesPage__firstText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.moviesPage__firstText span {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.moviesPage__firstText a {
+    padding: 14px 28px;
+    color: #F9F9F9;
+    border-radius: 10px;
+    background: #00925D;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}

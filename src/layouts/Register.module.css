@@ -1,0 +1,33 @@
+.register__section {
+    height: 100vh;
+    background: #1F41A9;
+    position: relative;
+    overflow: hidden;
+}
+
+.signIn__shape1 {
+    position: absolute;
+    border-radius: 50%;
+    background: #264ECA;
+    width: 775.131px;
+    height: 775.131px;
+    left: -387px;
+    top: -386px;
+}
+
+.signIn__shape2 {
+    position: absolute;
+    border-radius: 50%;
+    background: #264ECA;
+    width: 468.93px;
+    height: 468.93px;
+    bottom: -220.5px;
+    left: -193.97px;
+
+}
+
+.signIn__shape3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

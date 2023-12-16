@@ -1,0 +1,168 @@
+.editProfile__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    padding: 1rem;
+    position: relative;
+}
+
+.editProfile__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+.editProfile__form h1 {
+    font-size: 1.4rem;
+    color: #565656;
+}
+
+.editProfile__form .editProfile__div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.editProfile__form .editProfile__div div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.editProfile__form .editProfile__div div i {
+    cursor: pointer;
+    color: #000;
+}
+
+.editProfile__form div label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #9a9a9a;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.editProfile__form div input {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    color: #565656;
+    padding: 8px 12px;
+    height: 40px;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 1.42857143;
+    outline: none;
+}
+
+.editProfile__btn {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editProfile__btn button {
+    width: 45%;
+    font-weight: 400;
+    padding: 8px 16px;
+    display: inline-block;
+
+    color: #fff;
+    background-color: #1dc7ea;
+    font-size: 14px;
+    line-height: 1.42857143;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.editProfile__btn button:first-child {
+    background: transparent;
+    border: 1px solid #1dc7ea;
+    color: #000;
+}
+
+.editProfile__submitBtn {
+    opacity: .5;
+}
+
+.editProfile__changePassword {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    gap: 1rem;
+}
+
+.editProfile__changePassword h1 {
+    font-size: 1.4rem;
+    color: #565656;
+}
+
+.editProfile__changePassword .changePassword__div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+
+.changePassword__div label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #9a9a9a;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.changePassword__div div {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e3e3e3;
+    padding: 8px 12px;
+}
+
+.changePassword__div div input {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #565656;
+    height: 40px;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 1.42857143;
+    outline: none;
+}
+
+.editProfile__changePassword button {
+    width: 45%;
+    font-weight: 400;
+    padding: 8px 16px;
+    display: inline-block;
+    color: #fff;
+    background-color: #1dc7ea;
+    font-size: 14px;
+    line-height: 1.42857143;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.editProfile__saveBtn {
+    opacity: .5;
+}

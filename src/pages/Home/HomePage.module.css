@@ -1,0 +1,242 @@
+.home__section {
+    height: calc(100vh - 5rem);
+    overflow: hidden;
+    position: relative;
+}
+
+.homePage {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+
+.home__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: self-start;
+    gap: .5rem;
+}
+
+.home__container h1 {
+    color: #054C73;
+    font-size: 3.5rem;
+    font-weight: 700;
+    max-width: 550px;
+}
+
+.home__container p {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 750px;
+}
+
+.home__container a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid #054C73;
+    color: #054C73;
+    padding: 15px 30px;
+    transition: all .3s ease-in-out;
+}
+
+.home__container a:hover {
+    background: #054C73;
+    color: #fff;
+}
+
+.homePage .homePage__img {
+    max-width: 950px;
+    height: 70vh;
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    z-index: 1;
+}
+
+.homePage__img::after {
+    position: absolute;
+    content: '';
+    right: -50px;
+    top: -50px;
+    left: -50px;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 50% 50% 0% 0%;
+    background: #054C73;
+}
+
+.homePage .homePage__img img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 40%;
+    transform: translateX(-40%);
+}
+
+.homePage__banners {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.homePage__banners__blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #5c5c5c 0%, rgba(20, 20, 20, 0.00) 100%);
+    z-index: 1;
+}
+
+.homePage__banners__blur2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%);
+    z-index: 1;
+}
+
+.homePage__toRight,
+.homePage__toLeft {
+    display: inline-flex;
+}
+
+.homePage__toRight img {
+    animation: anim 80s infinite linear;
+    transform: translateX(0);
+}
+
+
+
+.homePage__toLeft img {
+    animation: anim2 90s infinite linear;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.homePage__bannerTexts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    height: 100%;
+    z-index: 2;
+}
+
+.homePage__bannerTexts h1 {
+    color: #fff;
+    max-width: 600px;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.homePage__bannerTexts p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.homePage__bannerBtns {
+    display: flex;
+    gap: 2rem;
+}
+
+.homePage__bannerBtns a {
+    display: flex;
+    align-items: center;
+    padding: .7rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    gap: 8px;
+}
+
+.homePage__bannerBtns a:first-child {
+    background: #FF6B00;
+    border-radius: 6px;
+}
+
+.homePage__bannerBtns a:last-child {
+    border: 1px solid #FF6B00;
+    border-radius: 6px;
+    padding: .5rem 2rem;
+}
+
+@media screen and (min-width:1600px) {
+    html {
+        font-size: 150%;
+    }
+
+    .home__container h1 {
+        max-width: 900px;
+    }
+
+    .home__container p {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 85%;
+    }
+
+    .home__container h1 {
+        max-width: 400px;
+    }
+
+    .home__container p {
+        max-width: 500px;
+    }
+
+    .homePage .homePage__img {
+        width: 400px;
+        height: 60vh;
+    }
+
+    .home__container a {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 700px) and (max-width:1100px) {
+    .homePage .homePage__img {
+        width: 350px;
+        height: 70vh;
+    }
+}

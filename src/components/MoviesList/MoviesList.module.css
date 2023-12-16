@@ -1,0 +1,330 @@
+.addCategory {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 0 0 1rem;
+    position: relative;
+}
+
+.addCategory form {
+    display: flex;
+    gap: 2rem;
+    align-items: end;
+
+}
+
+.addCategory form button {
+    padding: 16px 32px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    background: rgb(5, 76, 115, .9);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.addCategory form button:hover {
+    background: #054C73;
+}
+
+.addCategory form .inputDiv {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 4px;
+}
+
+.addCategory form .inputDiv label {
+    color: #565656;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.addCategory form .inputDiv input {
+    padding: 16px;
+    border-radius: 8px;
+
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #e3e3e3;
+    color: #565656;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 1.42857143;
+    outline: none;
+}
+
+.errMessage {
+    position: absolute;
+    left: 0%;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    gap: 12px;
+    border-radius: 11.368px;
+    padding: 15px;
+    background: var(--red-ds-color-red-light, #FCE8DB);
+    animation: bottomToTop 1.5s 1;
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+.successMessage {
+    position: absolute;
+    left: 0%;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    gap: 12px;
+    border-radius: 11.368px;
+    padding: 15px;
+    background: var(--red-ds-color-red-light, #84D65A);
+    animation: bottomToTop 1.5s 1;
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes bottomToTop {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+:is(.errMessage, .successMessage) i {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EF665B;
+}
+
+.successMessage i {
+    color: #054C73;
+}
+
+:is(.errMessage, .successMessage) i:last-child {
+    cursor: pointer;
+}
+
+:is(.errMessage, .successMessage) div {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.errMessage div span {
+    white-space: nowrap;
+    color: #71192F;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 22.735px;
+}
+
+.successMessage div span {
+    color: #000;
+}
+
+.categories__section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 90%;
+    height: 100%;
+    margin-inline: auto;
+    position: relative;
+}
+
+.categories {
+    padding: 1rem;
+    box-shadow: 0 0 5px 2px #c3c3c3;
+}
+
+.categories__head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% auto 15% 15% 10% 10% 10%;
+    padding: 1rem;
+    background: #054C73;
+}
+
+.categories__head span {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.categories__body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+
+.categories__body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.categories__body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.categories__body::-webkit-scrollbar-thumb {
+    background-color: #054C73;
+    border: 2px solid #555555;
+}
+
+.categories__infos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% auto 15% 15% 10% 10% 10%;
+    padding: 1rem;
+}
+
+.categories__infos span {
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    align-self: center;
+   
+}
+
+.categories__infos span:first-child {
+    padding: .2rem;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    align-items: center;
+
+}
+
+.categories__infos span img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.categories__infos span:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.categories__infos span:last-child i {
+    cursor: pointer;
+    color: #565656;
+}
+
+.categories__infos span:last-child i:hover {
+    color: #000;
+}
+
+.categories__infos:hover {
+    background: #f0f0f5;
+}
+
+
+.popUp__blur {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+    backdrop-filter: blur(5px);
+}
+
+.popUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    min-width: 500px;
+    min-height: 350px;
+}
+
+.popUp h2 {
+    color: #75767A;
+    font-family: Roboto;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.popUp svg {
+    margin: 1rem 0;
+    font-size: 4rem;
+    color: #F99407;
+}
+
+.popUp span {
+    color: #534F41;
+    font-family: Roboto;
+    font-weight: 500;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.popUp .popUp__btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.popUp .popUp__btns button {
+    flex: 1;
+    border-radius: 0;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    border: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-weight: 600;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.popUp .popUp__btns button:first-child {
+    background: #27AE60;
+}
+
+.popUp .popUp__btns button:first-child:hover {
+    background: #17934b;
+    border: 1px solid #fff;
+}
+
+.popUp .popUp__btns button:last-child {
+    background: rgba(242, 30, 30, 0.93);
+}
+
+.popUp .popUp__btns button:last-child:hover {
+    border: 1px solid #fff;
+    background: rgba(242, 30, 30, 1);
+}
