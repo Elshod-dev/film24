@@ -14,7 +14,7 @@ import GlobalProvider from "./context/GlobalProvider.jsx";
 import Profile from "./pages/Profile/Profile.jsx";
 import ProfileLayout from "./layouts/ProfileLayout.jsx";
 import Library from "./pages/Library/Library.jsx";
-import PageNotFound from "./components/PageNotFound/PageNotFound.jsx";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 import MovieLayout from "./layouts/MovieLayout.jsx";
 import SingleBigMovie from './components/SingleBigmovie/SingleBigMovie';
 

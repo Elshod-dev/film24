@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import styles from "./AddMovies.module.css";
 import { API_URL } from "./../../API/API";
-import axios from "./../../../../form-api/src/api/axios";
 import Loading from "../Loading/Loading.jsx";
+import axios from "axios";
 function AddMovies() {
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState([]);
@@ -438,8 +438,7 @@ function AddMovies() {
                   >
                     <img src={selectCast.image?.url} alt="No Image" />
                     <span>
-                      {selectCast.name}
-                      {' '}{selectCast.surname}
+                      {selectCast.name} {selectCast.surname}
                     </span>
                     <div className={styles.form__casts__icons}>
                       <i
