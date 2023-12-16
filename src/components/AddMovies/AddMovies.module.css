@@ -27,7 +27,7 @@
     gap: 2rem;
 }
 
-.addMovies__div form :where(.form__title, .form__language, .form__images, ) div {
+.addMovies__div form :where(.form__title, .form__language, .form__images) div {
     display: flex;
     flex-direction: column;
     flex: 1;
