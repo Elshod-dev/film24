@@ -40,7 +40,7 @@ function SingleMovie({ movie }) {
         </div>
       </Link>
       <div className={styles.heart}>
-        <i class="ri-heart-fill"></i>
+        <i className="ri-heart-fill"></i>
       </div>
     </div>
   );
