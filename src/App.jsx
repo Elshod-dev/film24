@@ -16,7 +16,7 @@ import ProfileLayout from "./layouts/ProfileLayout.jsx";
 import Library from "./pages/Library/Library.jsx";
 import PageNotFound from "./components/PageNotFound/PageNotFound.jsx";
 import MovieLayout from "./layouts/MovieLayout.jsx";
-import SingleBigMovie from "./components/SingleBigmovie/SingleBigmovie.jsx";
+import SingleBigMovie from './components/SingleBigmovie/SingleBigMovie';
 
 function App() {
   const isShow = JSON.parse(localStorage.getItem("isShow"))
